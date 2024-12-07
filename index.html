@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="box">
+        <div class="flex1">
+             <h1>Enter Temperature<svg xmlns="http://www.w3.org/2000/svg" width="46" height="56" fill="currentColor" class="bi bi-thermometer-high" viewBox="0 0 16 16" style="margin-left:350px">
+                <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585a1.5 1.5 0 0 1 1 1.415"/>
+                <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+              </svg></h1>
+              <hr>
+              <br><br>
+              <br><br><br><br>
+            <label>Temperature</label>
+            <input id="temperature" type="number" placeholder="     Temperature">
+            <br><br>
+            <label>From</label>
+            <select id="from">
+                <option>kelvin</option>
+                <option>fahrenheit</option>
+                <option>celsius</option>
+            </select>
+            <br><br>
+            <label>To</label>
+            <select id="To">
+                <option>kelvin</option>
+                <option>fahrenheit</option>
+                <option>celsius</option>
+            </select>
+            <br><br>
+            <button onclick="converttemperature()">Convert</button>
+        </div>
+        <div class="flex2" id="result">
+            <!-- <input id="result"> -->
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
